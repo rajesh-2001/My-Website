@@ -1,0 +1,369 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+body
+{
+    background-color:rgba(0, 0, 0, 0.061);
+}
+/*Menu*/
+.menu
+{  
+    text-align: center;
+}
+.menu ul
+{
+    list-style:none;
+}
+.menu ul li
+{
+    display:inline-block; 
+}
+.menu ul li a
+{
+    display: inline-block;
+    font-size: 20px;
+    margin:2px 7px;
+    text-decoration: none;
+    color: black; 
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+}
+.menu ul li a::before
+{
+    content: "";
+    height: 0;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    background-color: rgb(226, 43, 217);
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+}
+.menu ul li a:hover::before
+{
+    height:100%;
+}
+/*Menu End*/
+.image
+{
+    width:340px;
+    height: 275px;
+    margin-top:20px;
+    margin-left: 30px;
+    border-radius: 20px;
+    padding-right:10px;
+    cursor: pointer;
+}
+.image:hover
+{
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+.about-container
+{
+    margin:0px 80px;   
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 33px;
+    text-align:left;
+}
+.button
+{
+    display: inline-block;
+    padding:5px 4px;
+    border-radius: 8px;
+    font-size: 15px;
+    border:1px solid rgba(255, 0, 0, 0.712);
+    background: rgb(223, 224, 228);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.button::before
+{
+    content: "";
+    height: 100%;
+    width:0%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: rgb(226, 43, 217);
+    border-radius: 8px;
+    transition: .5s;
+    z-index: -1;
+}
+.button:hover::before
+{
+    width:100%;
+    border-radius: 8px;
+}
+.demo
+{
+    text-align: start;
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    cursor: pointer;
+}
+/*Contact Sectioin*/
+.contact-head
+{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.116);
+    font-size: 30px;
+    border:1px solid red;
+    padding: 8px 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 455px;
+}
+.contact-container1
+{
+    float: left;
+    margin:10px 15%;
+    background-color: rgba(0, 0, 0, 0.253);
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index:1;
+}
+.contact-container1::before
+{
+    content: "";   
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:0;
+    height:100%;
+    z-index:-1;
+    transition: 2s;
+}
+.contact-container1:hover::before
+{
+    background-color: rgba(137, 43, 226, 0.397);
+    width:100%;
+    border-radius: 20px;
+}
+.contact-container2
+{
+    float:right;
+    margin:10px 0;
+    margin-right: 15%; 
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 10px 40px;
+    border-radius: 20px; 
+    position: relative;
+    cursor: pointer;
+}
+.contact-container2::before
+{
+    content: "";   
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:0;
+    height:100%;
+    z-index:-1;
+    transition: 2s;
+}
+.contact-container2:hover::before
+{
+    background-color: rgba(137, 43, 226, 0.397);
+    width:100%;
+    border-radius: 20px;
+}
+.address-header
+{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    line-height: 28px;
+}
+address
+{
+    font-size: 20px;
+    line-height: 25px;
+}
+/*End Contact ection*/
+/*Education*/
+.education-head
+{
+    clear: both;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.116);
+    text-align: center;
+    font-size: 30px;
+    padding: 15px 105px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px 0;
+    margin-left: 385px;
+    border-radius: 20px;
+    text-shadow: 4px 3px rgba(30, 255, 0, 0.534);
+}
+.education-container
+{
+    background-color: rgba(249, 210, 250, 0.342);
+    text-align: start;
+    font-size: 10px;
+    margin:10px 160px;
+    padding:10px 15px;
+    line-height: 35px;
+    cursor: pointer;
+    border-radius: 23px;
+}
+.year
+{
+    font-size: 18px;
+    display: inline-block;
+    padding: 0px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    line-height: 15px;
+}
+.exam
+{
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.description
+{
+    font-size: 18px;
+    margin-right: 280px;
+    word-spacing: 7px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.description:hover{
+    color:rgb(0, 77, 128);
+}
+.left{
+    float: left;
+}
+.right{
+    float:right;
+}
+.clear{
+    clear: both;
+}
+.icon
+{
+    display:inline-block;
+   
+}
+.Demo
+{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color:green;
+}
+/*Image*/
+.img-head
+{
+    clear:both;
+    display:inline-block;
+    background-color:rgba(0, 0, 0, 0.116);
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin:20px 0;
+    margin-left: 390px;
+    padding:20px 30px;
+    border-radius: 20px;
+    text-shadow: 2px 2px rgba(255, 0, 0, 0.842);
+    border:5px 2px solid red;
+    margin-bottom: 40px;
+}
+.slider-container2
+{
+    width:930;
+    height:300px;
+    overflow-x:scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-container2
+{
+    display: inline-block;
+    width:3100px;
+    height:300px;
+    cursor: pointer;
+    animation-name: rajesh;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.img-container2 img
+{
+    float: left;
+    width:300px;
+    height:300px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+@keyframes rajesh
+{
+    0%{
+        left:0px;
+    }
+    20%{
+        left:-620px;
+    }
+    40%{
+        left:-1240px;
+    }
+    60%{
+        left:-1860px;
+    }
+    80%{
+        left:-2480px;
+    }
+    100%{
+        left:-3100px;
+    }
+}
+/*Image End*/
+.footer
+{
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+/*Contact*/
+
+.media
+{
+    
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.media a
+{
+    display: inline-block;
+    text-decoration: none;
+    padding:10px;
+}
+/*Contact End*/
